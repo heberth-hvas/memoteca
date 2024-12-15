@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Personal Notes
+
+npm install -g @angular/cli -> uses the localhost:4200
+ng new projectsName
+ng g c componentsName OR ng g c foldersName/componentsName
+Property Binding: é quando se usa [] nas tags HTML -> [value]=""
+Property Binding: usando {{}} é chamado de interpolação
+Event Binding: ocorre do template para o componente (click)=""
+Two-Way Data Binding: usa [(ngModel)]="", para passar informações de ambos lados
+Para configurar as rotas da aplicação é usado o arquivo -> app-routing.module.ts, usando {path:'', component: componentsName}, em Routes[]
+Router Link: é para navegação, na tag button no HTML usar -> routerLink="/component", o nome do componente da pra pegar em app-routing.module.ts
+@Input(): é utilizado no componente pai para que um componente filho consiga acessar/receber essa informação/atributo
+Conexão com o backend: na service -> pensamento.service.ts -> private readonly API = 'http://localhost:3000/pensamentos';
+Criar -> Create -> método POST
+Listar -> Read -> método GET
+Alterar -> Update -> método PUT
+Excluir -> Delete -> método DELETE
+Para fazer as rotas deve-se usar o ROUTER, dentro do cancelar, por exemplo, a utilização seria -> this.router.navigate(['listarPensamento']), entre aspas simples a rota desejada
