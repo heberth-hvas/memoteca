@@ -51,8 +51,11 @@ Router Link: é para navegação, na tag button no HTML usar -> routerLink="/com
 Conexão com o backend: na service -> pensamento.service.ts -> private readonly API = 'http://localhost:3000/pensamentos';
 
 Criar -> Create -> método POST
+
 Listar -> Read -> método GET
+
 Alterar -> Update -> método PUT
+
 Excluir -> Delete -> método DELETE
 
 Para fazer as rotas deve-se usar o ROUTER, dentro do cancelar, por exemplo, a utilização seria -> this.router.navigate(['listarPensamento']), entre aspas simples a rota desejada
